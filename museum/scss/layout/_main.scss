@@ -1,0 +1,273 @@
+main {
+  width: 192rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+
+  section {
+    width: 192rem;
+    background-color: #030303;
+    &:nth-child(even) {
+      background-color: #fff;
+    }
+  }
+
+  //------------------------------------------------------------------
+  //												WELCOME SECTION
+  //------------------------------------------------------------------
+
+  .welcome {
+    height: 75rem;
+    padding: 11.4rem 0 0 24rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+
+    &-img {
+      width: 100rem;
+      height: 75rem;
+      background-image: url('../../assets/img/header-background.jpg') no-repeat;
+      background-position: right;
+    }
+
+    &-container {
+      z-index: 10;
+      width: 60rem;
+      height: 39rem;
+      p {
+        margin-top: 2.6rem;
+        margin-bottom: 7.6rem;
+        font-family: $plain-text-font-family;
+        font-size: 2.8rem;
+        line-height: 3.3rem;
+      }
+      button {
+        border: 0;
+        border-radius: 1rem;
+        width: 36rem;
+        height: 7.5rem;
+        font-family: $plain-text-font-family-light;
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+        background-color: #710707;
+        color: #ffffff;
+        &:hover {
+          background-color: #9d8665;
+        }
+      }
+    }
+
+    h1 {
+      display: none;
+    }
+  }
+
+  //------------------------------------------------------------------
+  //												VISITING SECTION
+  //------------------------------------------------------------------
+
+  .visiting {
+    width: 192rem;
+    padding: 0 24rem;
+    height: 126rem;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2 {
+      margin-top: 6rem;
+      color: #9d8665;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      display: inline-block;
+      height: 1em;
+      width: 100%;
+      border-bottom: 0.3rem solid #710707;
+      margin-top: 2.5rem;
+    }
+
+    &-cards {
+      margin-top: 10.3rem;
+      width: 144rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &-card {
+        width: 44rem;
+        height: 43rem;
+        color: #000000;
+        position: relative;
+        margin-bottom: 7.8rem;
+
+        h3 {
+          margin-top: 2.5rem;
+          font-family: $header-font-family;
+          font-size: 3.2rem;
+          line-height: 3.5rem;
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            display: inline-block;
+            height: 1em;
+            width: 30rem;
+            border-bottom: 0.3rem solid #710707;
+            margin-top: 0.9rem;
+          }
+        }
+
+        P {
+          margin-top: 2.1rem;
+          font-family: $plain-text-font-family-light;
+          font-size: 2.2rem;
+          line-height: 2.6rem;
+
+          &:last-of-type {
+            margin-top: 1rem;
+            font-size: 1.8rem;
+            line-height: 2.1rem;
+          }
+        }
+      }
+    }
+  }
+
+  //------------------------------------------------------------------
+  //												EXPLORE SECTION
+  //------------------------------------------------------------------
+
+  .explore {
+    width: 192rem;
+    padding: 0 24rem;
+    height: 86.5rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+
+    &-description {
+      margin-top: 7.4rem;
+      margin-right: 6rem;
+
+      h2::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        display: inline-block;
+        height: 1em;
+        width: 100%;
+        border-bottom: 0.3rem solid #710707;
+        margin-top: 2.5rem;
+      }
+
+      p {
+        width: 66rem;
+        margin-top: 10rem;
+        margin-bottom: 2.5rem;
+        font-family: $plain-text-font-family;
+        font-size: 2.2rem;
+      }
+    }
+
+    &-img {
+      margin-top: 9rem;
+    }
+  }
+
+  //------------------------------------------------------------------
+  //												VIDEO SECTION
+  //------------------------------------------------------------------
+
+  .video {
+    width: 192rem;
+    padding: 0 24rem;
+    height: 100rem;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-player {
+      &-container {
+        display: flex;
+        position: relative;
+        margin-top: 9rem;
+
+        button {
+          position: absolute;
+          top: 25rem;
+          left: 68rem;
+          border: none;
+          background-color: transparent;
+          img {
+            z-index: 10;
+          }
+          &:hover,
+          img:hover {
+            cursor: pointer;
+          }
+        }
+
+        .in-video {
+          &-2 {
+            position: absolute;
+            top: 20rem;
+            left: 61rem;
+          }
+        }
+      }
+      &-panel {
+        height: 8.5rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: black;
+
+        input {
+          &:first-of-type {
+            width: 82rem;
+          }
+          &:last-of-type {
+            width: 15.5rem;
+          }
+        }
+        button:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  //------------------------------------------------------------------
+  //												TICKETS SECTION
+  //------------------------------------------------------------------
+
+  .tickets {
+    width: 192rem;
+    height: 89.3rem;
+    color: #ffffff;
+    padding: 0 24rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  //------------------------------------------------------------------
+  //												CONTACTS SECTION
+  //------------------------------------------------------------------
+
+  .contacts {
+    width: 192rem;
+    height: 97rem;
+    color: #ffffff;
+    padding: 0 24rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
