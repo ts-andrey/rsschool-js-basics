@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto+Slab:wght@200&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Museum</title>
   </head>
   <body>
     <header class="header">
@@ -27,63 +34,65 @@
     </header>
 
     <main>
-      <h1>Museum layout task by Andrei Tsakunou</h1>
-
-      <section id="welcome">
+      <section class="welcome">
+        
         <div class="welcome-container">
-          <h2>Welcome to the Louvre</h2>
+          <h2>
+            Welcome <br />
+            to the Louvre
+          </h2>
           <p>From the castle to the museum</p>
           <button>Discover the Louvre</button>
         </div>
+        <div class="welcome-img">
+          <h1>Museum layout task by Andrei Tsakunou</h1>
+        </div>
+
       </section>
 
-      <section id="visiting">
+      <section class="visiting">
         <h2>Virtual tour</h2>
-
-        <div class="visiting-card">
-          <img src="assets/img/card-1.jpg" alt="Royal Palace" />
-          <h3>Royal Palace</h3>
-          <p>360° Virtual Tour</p>
-          <p>Google Street Panorama View</p>
-        </div>
-
-        <div class="visiting-card">
-          <img src="assets/img/card-2.jpg" alt="Denon Wing" />
-          <h3>Denon Wing</h3>
-          <p>360° Virtual Tour</p>
-          <p>Google Street Panorama View</p>
-        </div>
-
-        <div class="visiting-card">
-          <img src="assets/img/card-3.jpg" alt="Colonnade Perrault" />
-          <h3>Colonnade Perrault</h3>
-          <p>360° Virtual Tour</p>
-          <p>Google Street Panorama View</p>
-        </div>
-
-        <div class="visiting-card">
-          <img src="assets/img/card-4.jpg" alt="Greek hall" />
-          <h3>Greek hall</h3>
-          <p>360° Virtual Tour</p>
-          <p>Google Street Panorama View</p>
-        </div>
-
-        <div class="visiting-card">
-          <img src="assets/img/card-5.jpg" alt="Mona Lisa" />
-          <h3>Mona Lisa</h3>
-          <p>360° Virtual Tour</p>
-          <p>Google Street Panorama View</p>
-        </div>
-
-        <div class="visiting-card">
-          <img src="assets/img/card-6.jpg" alt="Night Palace" />
-          <h3>Night Palace</h3>
-          <p>360° Virtual Tour</p>
-          <p>Google Street Panorama View</p>
+        <div class="visiting-cards">
+          <div class="visiting-cards-card">
+            <img src="assets/img/card-1.jpg" alt="Royal Palace" />
+            <h3>Royal Palace</h3>
+            <p>360° Virtual Tour</p>
+            <p>Google Street Panorama View</p>
+          </div>
+          <div class="visiting-cards-card">
+            <img src="assets/img/card-2.jpg" alt="Denon Wing" />
+            <h3>Denon Wing</h3>
+            <p>360° Virtual Tour</p>
+            <p>Google Street Panorama View</p>
+          </div>
+          <div class="visiting-cards-card">
+            <img src="assets/img/card-3.jpg" alt="Colonnade Perrault" />
+            <h3>Colonnade Perrault</h3>
+            <p>360° Virtual Tour</p>
+            <p>Google Street Panorama View</p>
+          </div>
+          <div class="visiting-cards-card">
+            <img src="assets/img/card-4.jpg" alt="Greek hall" />
+            <h3>Greek hall</h3>
+            <p>360° Virtual Tour</p>
+            <p>Google Street Panorama View</p>
+          </div>
+          <div class="visiting-cards-card">
+            <img src="assets/img/card-5.jpg" alt="Mona Lisa" />
+            <h3>Mona Lisa</h3>
+            <p>360° Virtual Tour</p>
+            <p>Google Street Panorama View</p>
+          </div>
+          <div class="visiting-cards-card">
+            <img src="assets/img/card-6.jpg" alt="Night Palace" />
+            <h3>Night Palace</h3>
+            <p>360° Virtual Tour</p>
+            <p>Google Street Panorama View</p>
+          </div>
         </div>
       </section>
 
-      <section id="explore">
+      <section class="explore">
         <div class="explore-description">
           <h2>Picture explore</h2>
           <p>
@@ -102,20 +111,32 @@
         <div class="explore-img"><img src="" alt="" /></div>
       </section>
 
-      <section id="video">
+      <section class="video">
         <div class="video-player-container">
           <img src="./assets/video/video.jpg" alt="player image" />
-          <img src="./assets/video/play-in.svg" alt="round in player" />
+          <button>
+            <img src="./assets/video/play-in.svg" alt="round in player" />
+          </button>
           <img src="./assets/video/round-in.svg" alt="rectangle in player" />
         </div>
         <div class="video-player-panel">
-          <img src="./assets/video/previous.svg" alt="previous file logo" />
-          <img src="./assets/video/play.svg" alt="play logo" />
-          <img src="./assets/video/next.svg" alt="next file logo" />
+          <button>
+            <img src="./assets/video/previous.svg" alt="previous file logo" />
+          </button>
+          <button>
+            <img src="./assets/video/play.svg" alt="play logo" />
+          </button>
+          <button>
+            <img src="./assets/video/next.svg" alt="next file logo" />
+          </button>
           <input type="range" name="time" />
-          <img src="./assets/video/sound.svg" alt="sound logo" />
+          <button>
+            <img src="./assets/video/sound.svg" alt="sound logo" />
+          </button>
           <input type="range" name="sound" />
-          <img src="./assets/video/screen.svg" alt="screen logo" />
+          <button>
+            <img src="./assets/video/screen.svg" alt="screen logo" />
+          </button>
         </div>
 
         <div class="video-description">
@@ -127,7 +148,7 @@
         </div>
       </section>
 
-      <section id="tickets">
+      <section class="tickets">
         <h2>Buy tickets</h2>
         <div class="tickets-container">
           <img src="" alt="" />
@@ -147,7 +168,7 @@
         </div>
       </section>
 
-      <section id="contacts">
+      <section class="contacts">
         <h2>Contacts</h2>
         <div class="contacts-container">
           <h4>Palais Royal Musee du Louvre</h4>
