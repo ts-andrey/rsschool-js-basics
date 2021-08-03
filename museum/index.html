@@ -35,7 +35,6 @@
 
     <main>
       <section class="welcome">
-        
         <div class="welcome-container">
           <h2>
             Welcome <br />
@@ -47,7 +46,6 @@
         <div class="welcome-img">
           <h1>Museum layout task by Andrei Tsakunou</h1>
         </div>
-
       </section>
 
       <section class="visiting">
@@ -115,7 +113,7 @@
         <div class="video-player-container">
           <img src="./assets/video/video.jpg" alt="player image" />
           <button>
-            <img src="./assets/video/play-in.svg"  alt="round in player" />
+            <img src="./assets/video/play-in.svg" alt="round in player" />
           </button>
           <img src="./assets/video/round-in.svg" class="in-video-2" alt="rectangle in player" />
         </div>
@@ -151,66 +149,116 @@
       <section class="tickets">
         <h2>Buy tickets</h2>
         <div class="tickets-container">
-          <img src="" alt="" />
+          <img src="assets/img/tickets.jpg" alt="tickets image" />
           <div class="tickets-container-tickets-type">
             <h4>Ticket type</h4>
-            <lable><input type="radio" name="ticket-type" />Permanent exhibition</lable>
+            <lable><input type="radio" name="ticket-type" checked />Permanent exhibition</lable>
             <lable><input type="radio" name="ticket-type" />Temporary exhibition</lable>
             <lable><input type="radio" name="ticket-type" />Combined Admission</lable>
           </div>
           <div class="tickets-container-tickets-amount">
             <h4>Amount</h4>
-            <layout>Basic 18+<input type="number" name="basic-amount" /></layout>
-            <layout>Senior 65+<input type="number" name="senior-amount" /></layout>
+            <lable
+              >Basic 18+
+              <div class="number">
+                <button
+                  class="number-minus"
+                  type="button"
+                  onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"
+                >
+                  -
+                </button>
+                <input type="number" min="0" value="1" readonly />
+                <button
+                  class="number-plus"
+                  type="button"
+                  onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"
+                >
+                  +
+                </button>
+              </div></lable
+            >
+            <lable
+              >Senior 65+
+              <div class="number">
+                <button
+                  class="number-minus"
+                  type="button"
+                  onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"
+                >
+                  -
+                </button>
+                <input type="number" min="0" value="1" readonly />
+                <button
+                  class="number-plus"
+                  type="button"
+                  onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"
+                >
+                  +
+                </button>
+              </div></lable
+            >
             <p>Total €220</p>
+            <button class="ticket-button">Buy Now</button>
           </div>
-          <button>Buy Now</button>
         </div>
       </section>
 
       <section class="contacts">
         <h2>Contacts</h2>
         <div class="contacts-container">
-          <h4>Palais Royal Musee du Louvre</h4>
-          <p>address: 75001 Paris, France</p>
-          <p>phone: +33(0) 1 40 20 50 50</p>
-          <p>mail: info@louvre.fr</p>
+          <div class="contacts-container-info">
+            <h4>
+              Palais Royal <br />
+              Musee du Louvre
+            </h4>
+            <p>address: 75001 Paris, France</p>
+            <p>phone: +33(0) 1 40 20 50 50</p>
+            <p>mail: info@louvre.fr</p>
+          </div>
+          <div class="contacts-container-image">
+            <img src="./assets//img/map.png" alt="louvre location" />
+          </div>
         </div>
-        <img src="./assets//img/map.png" alt="louvre location" />
       </section>
     </main>
 
-    <footer>
-      <div class="logo"></div>
-
-      <nav>
-        <li><a href="#welcome">Welcome</a></li>
-        <li><a href="#visiting">Visiting</a></li>
-        <li><a href="#explore">Explore</a></li>
-        <li><a href="#video">Video</a></li>
-        <li><a href="#tickets">Tickets</a></li>
-        <li><a href="#contacts">Contacts</a></li>
-      </nav>
-
-      <nav>
-        <ul>
-          <li>
-            <a href="#"><img src="./assets/svg/youtube.svg" alt="youtube icon" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./assets/svg/instagram.svg" alt="instagram icon" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./assets/svg/facebook.svg" alt="facebook icon" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./assets/svg/twitter.svg" alt="twitter icon" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./assets/svg/pinterest.svg" alt="pinterest icon" /></a>
-          </li>
-        </ul>
-      </nav>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-container-logo">
+          <img src="./assets/svg/logo.svg" alt="louvre logotype" />
+          <p>Louvre</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#welcome">Welcome</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#visiting">Visiting</a></li>
+            <li><a href="#tickets">Tickets</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <ul>
+            <li>
+              <a href="#"><img src="./assets/svg/youtube.svg" alt="youtube icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/svg/instagram.svg" alt="instagram icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/svg/facebook.svg" alt="facebook icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/svg/twitter.svg" alt="twitter icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/svg/pinterest.svg" alt="pinterest icon" /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>
