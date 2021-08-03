@@ -13,24 +13,22 @@ main {
       background-color: #fff;
     }
   }
-
+  
   //------------------------------------------------------------------
   //												WELCOME SECTION
   //------------------------------------------------------------------
-
+  
   .welcome {
     height: 75rem;
     padding: 11.4rem 0 0 24rem;
     color: #ffffff;
     display: flex;
     justify-content: space-between;
+    background-image: url("../../museum/assets/img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 121rem 75rem;
+    background-position: right;
 
-    &-img {
-      width: 100rem;
-      height: 75rem;
-      background-image: url('../../assets/img/header-background.jpg') no-repeat;
-      background-position: right;
-    }
 
     &-container {
       z-index: 10;
@@ -112,6 +110,8 @@ main {
           font-family: $header-font-family;
           font-size: 3.2rem;
           line-height: 3.5rem;
+          text-transform: uppercase;
+          letter-spacing: 0.5rem;
           &::after {
             content: '';
             position: absolute;
@@ -173,6 +173,7 @@ main {
         margin-bottom: 2.5rem;
         font-family: $plain-text-font-family;
         font-size: 2.2rem;
+        line-height: 3.8rem;
       }
     }
 
