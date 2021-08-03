@@ -9,8 +9,9 @@
   &-container {
     color: #ffffff;
     width: 144rem;
-    padding: 7.5rem;
+    padding: 7.5rem 0;
     display: flex;
+    justify-content: flex-start;
 
     &-logo {
 			margin-right: 52.5rem;
@@ -24,11 +25,13 @@
       line-height: 5rem;
 			letter-spacing: 0.5rem;
 
-      img {
+      img { 
         width: 5rem;
         height: 3.4rem;
 				margin-right: 2rem;
+        padding-bottom: .8rem;
       }
+
     }
 
     &-nav {
@@ -39,14 +42,28 @@
         list-style: none;
         display: flex;
 				align-items: center;
-        justify-content: space-between;
 				font-family: $plain-text-font-family-light;
 				font-size: 2.2rem;
         li {
-          
+          margin-right: 7.7rem;
+          &:last-of-type{
+            margin-right: 0;
+          }
+          &:nth-of-type(1){
+            letter-spacing: .03rem;
+          }
+          &:nth-of-type(2), &:nth-of-type(3){
+            letter-spacing: .07rem;
+          }
+          &:nth-of-type(4){
+            letter-spacing: .1rem;
+          }
+          &:nth-of-type(5){
+            letter-spacing: .14rem;
+          }
+
           a {
-						line-height: 5rem;
-            letter-spacing: 3%;
+						line-height: 4.7rem;
             text-decoration: none;
 						&:link,	&:visited {
               color: #FFFFFF;

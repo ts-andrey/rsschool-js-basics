@@ -40,6 +40,7 @@ main {
         font-family: $plain-text-font-family;
         font-size: 2.8rem;
         line-height: 3.3rem;
+        letter-spacing: 0.2rem;
       }
       button {
         border: 0;
@@ -325,7 +326,7 @@ main {
         line-height: 3.3rem;
       }
 
-      lable {
+      span {
         font-family: $plain-text-font-family;
         font-size: 2.2rem;
         line-height: 2.6rem;
@@ -337,7 +338,7 @@ main {
         display: flex;
         flex-direction: column;
 
-        lable {
+        span {
           width: calc(23rem + 1.7rem + 2.3rem);
           margin-top: 5rem;
         }
@@ -349,18 +350,22 @@ main {
 
       &-tickets-amount {
         margin-left: 24rem;
+        width: 15rem;
         display: flex;
         flex-direction: column;
+        text-align: right;
 
         h4 {
           margin-bottom: 1.1rem;
         }
 
-        lable {
-          margin-bottom: 3.5rem;
+        span{
+          text-align: left;
         }
 
         input {
+          margin-top: 1.4rem;
+          margin-bottom: 3.5rem;
           width: 15rem;
           height: 5rem;
           background-color: #000000;
@@ -374,6 +379,7 @@ main {
         }
 
         p {
+          margin-top: 1.5rem;
           font-family: $plain-text-font-family;
           font-size: 2.8rem;
           line-height: 3.3rem;
@@ -381,6 +387,7 @@ main {
         }
 
         .ticket-button {
+          margin-left: -2.5rem;
           margin-top: 5rem;
           width: 17.5rem;
           height: 5rem;
