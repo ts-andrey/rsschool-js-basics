@@ -6,15 +6,16 @@
 	
 	&-container{
 		padding: 7.5rem 24rem;
-		display: flex;
-		justify-content: space-between;
 		width: 144rem;
 		height: 15rem;
+		display: flex;
+		justify-content: start;
 
 		&-logo{
 			color: #fff;
       width: 19.5rem;
       height: 5rem;
+			margin-right: 14.5rem;
       display: flex;
 			align-items: center;
       text-transform: uppercase;
@@ -30,36 +31,62 @@
       }
 		}
 
-		nav{
-
+		nav{		
 			&:first-of-type{
 				width: 37rem;
 				height: 15rem;
+				margin-right: 40rem;
 			}
 
 			ul {
         list-style: none;
-        display: flex;
-				align-items: center;
-        justify-content: space-between;
-				flex-wrap: wrap;
-				font-family: $plain-text-font-family-light;
-				font-size: 2.2rem;
-        li {
-          padding: 1rem;
-          a {
-						line-height: 5rem;
-            letter-spacing: 3%;
-            text-decoration: none;
-						&:link,	&:visited {
-              color: #FFFFFF;
-						}
-            &:hover, &:active{
-              color:#9D8665;
-            }
-          }
-        }
+        display: flex;		
       }
+		}
+		
+		&-nav{
+			width: 37rem;
+			height: 15rem;
+			flex-wrap: wrap;
+			justify-content:flex-start;
+			font-family: $plain-text-font-family-light;
+			font-size: 2.2rem;
+
+			li{
+				padding: 0 1rem;
+				&:nth-child(odd){
+					width: 25rem;
+				}
+				a {
+					line-height: 5rem;
+					letter-spacing: 3%;
+					text-decoration: none;
+					&:link,	&:visited {
+						color: #FFFFFF;
+					}
+					&:hover, &:active{
+						color:#9D8665;
+					}
+				}
+			}
+		}
+		&-social{
+			margin-top: 8.8rem;
+			width: 34rem;
+			height: 5rem;
+			li{
+				width: 4.5rem;
+				height: 4.5rem;
+				line-height: 4.5rem ;
+				border: .2rem solid #666666;
+				margin: .8rem;
+				padding: .2rem 1rem;
+				border-radius: 50%;
+				&:hover{
+					text-decoration: none;
+					border: .2rem solid #9D8665;
+				}
+			}
 		}
 	}
 }

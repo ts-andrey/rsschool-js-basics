@@ -34,7 +34,7 @@
     </header>
 
     <main>
-      <section class="welcome">
+      <section class="welcome" id="welcome">
         <div class="welcome-container">
           <h2>
             Welcome <br />
@@ -48,49 +48,61 @@
         </div>
       </section>
 
-      <section class="visiting">
+      <section class="visiting" id="visiting">
         <h2>Virtual tour</h2>
         <div class="visiting-cards">
-          <div class="visiting-cards-card">
-            <img src="assets/img/card-1.jpg" alt="Royal Palace" />
-            <h3>Royal Palace</h3>
-            <p>360° Virtual Tour</p>
-            <p>Google Street Panorama View</p>
-          </div>
-          <div class="visiting-cards-card">
-            <img src="assets/img/card-2.jpg" alt="Denon Wing" />
-            <h3>Denon Wing</h3>
-            <p>360° Virtual Tour</p>
-            <p>Google Street Panorama View</p>
-          </div>
-          <div class="visiting-cards-card">
-            <img src="assets/img/card-3.jpg" alt="Colonnade Perrault" />
-            <h3>Colonnade Perrault</h3>
-            <p>360° Virtual Tour</p>
-            <p>Google Street Panorama View</p>
-          </div>
-          <div class="visiting-cards-card">
-            <img src="assets/img/card-4.jpg" alt="Greek hall" />
-            <h3>Greek hall</h3>
-            <p>360° Virtual Tour</p>
-            <p>Google Street Panorama View</p>
-          </div>
-          <div class="visiting-cards-card">
-            <img src="assets/img/card-5.jpg" alt="Mona Lisa" />
-            <h3>Mona Lisa</h3>
-            <p>360° Virtual Tour</p>
-            <p>Google Street Panorama View</p>
-          </div>
-          <div class="visiting-cards-card">
-            <img src="assets/img/card-6.jpg" alt="Night Palace" />
-            <h3>Night Palace</h3>
-            <p>360° Virtual Tour</p>
-            <p>Google Street Panorama View</p>
-          </div>
+          <a href="">
+            <div class="visiting-cards-card">
+              <img src="assets/img/card-1.jpg" alt="Royal Palace" />
+              <h3>Royal Palace</h3>
+              <p>360° Virtual Tour</p>
+              <p>Google Street Panorama View</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="visiting-cards-card">
+              <img src="assets/img/card-2.jpg" alt="Denon Wing" />
+              <h3>Denon Wing</h3>
+              <p>360° Virtual Tour</p>
+              <p>Google Street Panorama View</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="visiting-cards-card">
+              <img src="assets/img/card-3.jpg" alt="Colonnade Perrault" />
+              <h3>Colonnade Perrault</h3>
+              <p>360° Virtual Tour</p>
+              <p>Google Street Panorama View</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="visiting-cards-card">
+              <img src="assets/img/card-4.jpg" alt="Greek hall" />
+              <h3>Greek hall</h3>
+              <p>360° Virtual Tour</p>
+              <p>Google Street Panorama View</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="visiting-cards-card">
+              <img src="assets/img/card-5.jpg" alt="Mona Lisa" />
+              <h3>Mona Lisa</h3>
+              <p>360° Virtual Tour</p>
+              <p>Google Street Panorama View</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="visiting-cards-card">
+              <img src="assets/img/card-6.jpg" alt="Night Palace" />
+              <h3>Night Palace</h3>
+              <p>360° Virtual Tour</p>
+              <p>Google Street Panorama View</p>
+            </div>
+          </a>
         </div>
       </section>
 
-      <section class="explore">
+      <section class="explore" id="explore">
         <div class="explore-description">
           <h2>Picture explore</h2>
           <p>
@@ -109,7 +121,7 @@
         <div class="explore-img"><img src="./assets/img/explore.jpg" alt="explore image" /></div>
       </section>
 
-      <section class="video">
+      <section class="video" id="video">
         <div class="video-player-container">
           <img src="./assets/video/video.jpg" alt="player image" />
           <button>
@@ -146,7 +158,7 @@
         </div>
       </section>
 
-      <section class="tickets">
+      <section class="tickets" id="tickets">
         <h2>Buy tickets</h2>
         <div class="tickets-container">
           <img src="assets/img/tickets.jpg" alt="tickets image" />
@@ -158,53 +170,21 @@
           </div>
           <div class="tickets-container-tickets-amount">
             <h4>Amount</h4>
-            <lable
-              >Basic 18+
-              <div class="number">
-                <button
-                  class="number-minus"
-                  type="button"
-                  onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"
-                >
-                  -
-                </button>
-                <input type="number" min="0" value="1" readonly />
-                <button
-                  class="number-plus"
-                  type="button"
-                  onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"
-                >
-                  +
-                </button>
-              </div></lable
-            >
-            <lable
-              >Senior 65+
-              <div class="number">
-                <button
-                  class="number-minus"
-                  type="button"
-                  onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"
-                >
-                  -
-                </button>
-                <input type="number" min="0" value="1" readonly />
-                <button
-                  class="number-plus"
-                  type="button"
-                  onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"
-                >
-                  +
-                </button>
-              </div></lable
-            >
+            <lable>
+              Basic 18+
+              <input type="number" min="0" value="1"/>
+            </lable>
+            <lable>
+              Senior 65+
+              <input type="number" min="0" value="1"/>
+            </lable>
             <p>Total €220</p>
             <button class="ticket-button">Buy Now</button>
           </div>
         </div>
       </section>
 
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <h2>Contacts</h2>
         <div class="contacts-container">
           <div class="contacts-container-info">
@@ -230,7 +210,7 @@
           <p>Louvre</p>
         </div>
         <nav>
-          <ul>
+          <ul class="footer-container-nav">
             <li><a href="#welcome">Welcome</a></li>
             <li><a href="#video">Video</a></li>
             <li><a href="#visiting">Visiting</a></li>
@@ -240,7 +220,7 @@
           </ul>
         </nav>
         <nav>
-          <ul>
+          <ul class="footer-container-social">
             <li>
               <a href="#"><img src="./assets/svg/youtube.svg" alt="youtube icon" /></a>
             </li>
