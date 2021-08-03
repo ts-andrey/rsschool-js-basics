@@ -21,21 +21,21 @@ h1, h2 {
   position: relative; }
 
 .footer {
-  width: 192rem;
+  width: 100vw;
   height: 30rem;
   background-color: #030303;
   margin: 0 auto; }
   .footer-container {
-    padding: 7.5rem 24rem;
+    padding: 7.5rem 0 0 24rem;
     width: 144rem;
     height: 15rem;
     display: flex;
-    justify-content: start; }
+    justify-content: flex-start; }
     .footer-container-logo {
       color: #fff;
       width: 19.5rem;
       height: 5rem;
-      margin-right: 14.5rem;
+      margin-right: 13.5rem;
       display: flex;
       align-items: center;
       text-transform: uppercase;
@@ -46,16 +46,23 @@ h1, h2 {
       .footer-container-logo img {
         width: 5rem;
         height: 3.4rem;
+        margin-bottom: 0.65rem;
         margin-right: 2rem; }
     .footer-container nav:first-of-type {
       width: 37rem;
       height: 15rem;
-      margin-right: 40rem; }
+      margin-right: 40.4rem; }
+      .footer-container nav:first-of-type ul li:nth-of-type(odd) {
+        letter-spacing: 0.08rem;
+        text-align: left; }
+      .footer-container nav:first-of-type ul li:nth-of-type(even) {
+        letter-spacing: 0.13rem;
+        text-align: right; }
     .footer-container nav ul {
       list-style: none;
       display: flex; }
     .footer-container-nav {
-      width: 37rem;
+      width: 45rem;
       height: 15rem;
       flex-wrap: wrap;
       justify-content: flex-start;
@@ -64,40 +71,58 @@ h1, h2 {
       .footer-container-nav li {
         padding: 0 1rem; }
         .footer-container-nav li:nth-child(odd) {
-          width: 25rem; }
+          width: 25.9rem; }
         .footer-container-nav li a {
           line-height: 5rem;
-          letter-spacing: 3%;
-          text-decoration: none; }
+          text-decoration: none;
+          transition: color .45s; }
           .footer-container-nav li a:link, .footer-container-nav li a:visited {
-            color: #FFFFFF; }
+            color: #ffffff; }
           .footer-container-nav li a:hover, .footer-container-nav li a:active {
-            color: #9D8665; }
+            color: #9d8665; }
     .footer-container-social {
       margin-top: 8.8rem;
       width: 34rem;
       height: 5rem; }
+      .footer-container-social li:nth-of-type(1) {
+        padding-top: 0.30rem;
+        padding-left: 1rem; }
+      .footer-container-social li:nth-of-type(2) {
+        margin-left: 2.4rem;
+        padding-top: 0.5rem;
+        padding-left: 1.1rem; }
+      .footer-container-social li:nth-of-type(3) {
+        margin-left: 2.4rem;
+        padding-top: 0.5rem;
+        padding-left: 1.6rem; }
+      .footer-container-social li:nth-of-type(4) {
+        margin-left: 2.4rem;
+        padding-top: 0.5rem;
+        padding-left: 1.2rem; }
+      .footer-container-social li:nth-of-type(5) {
+        margin-left: 2.4rem;
+        padding-top: 0.6rem;
+        padding-left: 1.2rem; }
       .footer-container-social li {
-        width: 4.5rem;
-        height: 4.5rem;
+        width: 4.8rem;
+        height: 4.8rem;
         line-height: 4.5rem;
-        border: .2rem solid #666666;
-        margin: .8rem;
-        padding: .2rem 1rem;
-        border-radius: 50%; }
+        border: 0.2rem solid #666666;
+        padding: 0.2rem 1rem;
+        border-radius: 50%;
+        transition: border .3s; }
         .footer-container-social li:hover {
           text-decoration: none;
-          border: .2rem solid #9D8665; }
+          border: 0.2rem solid #9d8665; }
 
 .header {
-  width: 192rem;
+  width: 100vw;
   height: 20rem;
   display: flex;
-  justify-content: center;
-  background-color: #030303;
-  margin: 0 auto; }
+  background-color: #030303; }
   .header-container {
     color: #ffffff;
+    margin-left: 24rem;
     width: 144rem;
     padding: 7.5rem 0;
     display: flex;
@@ -141,21 +166,22 @@ h1, h2 {
             letter-spacing: .14rem; }
           .header-container-nav ul li a {
             line-height: 4.7rem;
-            text-decoration: none; }
+            text-decoration: none;
+            transition: .4s; }
             .header-container-nav ul li a:link, .header-container-nav ul li a:visited {
               color: #FFFFFF; }
             .header-container-nav ul li a:hover, .header-container-nav ul li a:active {
               color: #9D8665; }
 
 main {
-  width: 192rem;
+  width: 100vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   margin: 0 auto; }
   main section {
-    width: 192rem;
+    width: 100vw;
     background-color: #030303; }
     main section:nth-child(even) {
       background-color: #fff; }
@@ -167,8 +193,8 @@ main {
     justify-content: space-between;
     background-image: url("../../museum/assets/img/background.jpg");
     background-repeat: no-repeat;
-    background-size: 121rem 75rem;
-    background-position: right bottom; }
+    background-size: 121.5rem 75rem;
+    background-position: left 70.5rem bottom 0rem; }
     main .welcome-container {
       z-index: 10;
       width: 60rem;
@@ -186,18 +212,19 @@ main {
         width: 36rem;
         height: 7.5rem;
         font-family: "Roboto Slab", serif;
-        font-size: 2.2rem;
+        font-size: 2.45rem;
         line-height: 2.6rem;
         background-color: #710707;
-        color: #ffffff; }
+        color: #ffffff;
+        transition: background-color 0.45s; }
         main .welcome-container button:hover {
           background-color: #9d8665; }
     main .welcome h1 {
       display: none; }
   main .visiting {
-    width: 192rem;
+    width: 100vw;
     padding: 0 24rem;
-    height: 126rem;
+    height: 126.5rem;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -213,24 +240,28 @@ main {
       height: 1em;
       width: 100%;
       border-bottom: 0.3rem solid #710707;
-      margin-top: 2.5rem; }
+      margin-top: 3.9rem; }
     main .visiting-cards {
-      margin-top: 10.3rem;
       width: 144rem;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between; }
-      main .visiting-cards a, main .visiting-cards a:hover, main .visiting-cards a:active, main .visiting-cards a:visited {
+      main .visiting-cards a,
+      main .visiting-cards a:hover,
+      main .visiting-cards a:active,
+      main .visiting-cards a:visited {
         text-decoration: none; }
+      main .visiting-cards .card-row-1 {
+        margin-bottom: 7rem; }
+      main .visiting-cards .card-row-2 {
+        margin-bottom: 8.2rem; }
       main .visiting-cards-card {
         width: 44rem;
         height: 43rem;
         color: #000000;
-        position: relative;
-        margin-bottom: 7.8rem; }
+        position: relative; }
         main .visiting-cards-card:hover h3::after, main .visiting-cards-card:active h3::after {
-          width: 100%;
-          transition: width 1s; }
+          width: 100%; }
         main .visiting-cards-card h3 {
           margin-top: 2.5rem;
           font-family: "Forum", cursive;
@@ -239,6 +270,7 @@ main {
           text-transform: uppercase;
           letter-spacing: 0.5rem; }
           main .visiting-cards-card h3::after {
+            transition: width 1s;
             content: '';
             position: absolute;
             left: 0;
@@ -246,23 +278,25 @@ main {
             height: 1em;
             width: 30rem;
             border-bottom: 0.3rem solid #710707;
-            margin-top: 0.9rem; }
+            margin-top: 1.3rem; }
         main .visiting-cards-card P {
           margin-top: 2.1rem;
-          font-family: "Roboto Slab", serif;
+          font-family: "Roboto", sans-serif;
+          font-weight: 200;
           font-size: 2.2rem;
-          line-height: 2.6rem; }
+          line-height: 2.6rem;
+          letter-spacing: -0.01rem; }
           main .visiting-cards-card P:last-of-type {
             margin-top: 1rem;
             font-size: 1.8rem;
             line-height: 2.1rem; }
   main .explore {
-    width: 192rem;
+    width: 100vw;
     padding: 0 24rem;
     height: 86.5rem;
     color: #ffffff;
     display: flex;
-    justify-content: space-between; }
+    justify-content: flex-start; }
     main .explore-description {
       margin-top: 7.4rem;
       margin-right: 6rem; }
@@ -274,27 +308,27 @@ main {
         height: 1em;
         width: 100%;
         border-bottom: 0.3rem solid #710707;
-        margin-top: 2.5rem; }
+        margin-top: 3.9rem; }
       main .explore-description p {
-        width: 66rem;
-        margin-top: 10rem;
-        margin-bottom: 2.5rem;
+        width: 65.9rem;
         font-family: "Roboto", sans-serif;
         font-size: 2.2rem;
-        line-height: 3.8rem; }
+        line-height: 3.8rem;
+        margin-top: 2.6rem; }
+        main .explore-description p:first-of-type {
+          margin-top: 10.5rem; }
     main .explore-img {
       margin-top: 9rem; }
   main .video {
-    width: 192rem;
+    width: 100vw;
     padding: 0 24rem;
-    height: 100rem;
+    height: 101rem;
     color: #ffffff;
     display: flex;
-    flex-direction: column;
-    justify-content: center; }
+    flex-direction: column; }
     main .video-description {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
       align-content: center;
       margin-top: 4rem;
@@ -302,9 +336,11 @@ main {
       main .video-description h2 {
         color: #9d8665; }
       main .video-description p {
+        padding-top: 0.5rem;
+        padding-left: 11.5rem;
         align-content: center;
         align-self: center;
-        width: 72rem;
+        width: 83rem;
         height: 9rem;
         font-family: "Roboto", sans-serif;
         font-size: 2.2rem;
@@ -314,41 +350,59 @@ main {
       display: flex;
       position: relative;
       margin-top: 9rem; }
+      main .video-player-container .player {
+        width: 144rem;
+        height: 62.9rem; }
       main .video-player-container button {
         position: absolute;
-        top: 25rem;
-        left: 68rem;
+        top: 25.5rem;
+        left: 68.6rem;
         border: none;
         background-color: transparent; }
         main .video-player-container button img {
-          z-index: 10; }
+          z-index: 10;
+          transition: 0.3s; }
         main .video-player-container button:hover,
         main .video-player-container button img:hover {
           cursor: pointer;
           color: #989898; }
       main .video-player-container .in-video-2 {
         position: absolute;
-        top: 20rem;
+        top: 20.5rem;
         left: 61rem; }
     main .video-player-panel {
-      height: 8.5rem;
+      padding-top: 0.2rem;
+      width: 144rem;
+      height: 9rem;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: flex-start;
       align-items: center;
       background-color: black; }
       main .video-player-panel input {
         border-radius: 0.2rem; }
         main .video-player-panel input:first-of-type {
-          width: 82rem; }
+          margin-left: 4rem;
+          width: 82.3rem; }
         main .video-player-panel input:last-of-type {
+          margin-left: 1.8rem;
           width: 15.5rem; }
+      main .video-player-panel .player-panel-btn-1 {
+        margin-left: 4.1rem; }
+      main .video-player-panel .player-panel-btn-2 {
+        margin-left: 4.1rem; }
+      main .video-player-panel .player-panel-btn-3 {
+        margin-left: 4.1rem; }
+      main .video-player-panel .player-panel-btn-4 {
+        margin-left: 4rem; }
+      main .video-player-panel .player-panel-btn-5 {
+        margin-left: 4.9rem; }
       main .video-player-panel button {
         border: none;
         background-color: transparent; }
       main .video-player-panel button:hover {
         cursor: pointer; }
   main .tickets {
-    width: 192rem;
+    width: 100vw;
     height: 89.3rem;
     color: #ffffff;
     padding: 0 24rem;
@@ -364,18 +418,22 @@ main {
         height: 1em;
         width: 100%;
         border-bottom: 0.3rem solid #710707;
-        margin-top: 2.5rem; }
+        margin-top: 3.6rem; }
     main .tickets-container {
       margin-top: 10rem;
       display: flex; }
       main .tickets-container h4 {
         font-family: "Forum", cursive;
-        font-size: 2.8rem;
-        line-height: 3.3rem; }
+        font-size: 3rem;
+        line-height: 3.3rem;
+        margin-top: 0.1rem;
+        margin-left: 0.2rem;
+        letter-spacing: 0.09rem;
+        text-transform: capitalize; }
       main .tickets-container span {
         font-family: "Roboto", sans-serif;
         font-size: 2.2rem;
-        line-height: 2.6rem; }
+        line-height: 2rem; }
       main .tickets-container-tickets-type {
         width: 27rem;
         margin-left: 6rem;
@@ -383,8 +441,10 @@ main {
         flex-direction: column; }
         main .tickets-container-tickets-type span {
           width: calc(23rem + 1.7rem + 2.3rem);
-          margin-top: 5rem; }
+          margin-top: 5.5rem; }
         main .tickets-container-tickets-type input {
+          width: 1.7rem;
+          height: 1.7rem;
           margin-right: 2.3rem; }
       main .tickets-container-tickets-amount {
         margin-left: 24rem;
@@ -393,24 +453,30 @@ main {
         flex-direction: column;
         text-align: right; }
         main .tickets-container-tickets-amount h4 {
-          margin-bottom: 1.1rem; }
+          letter-spacing: 0.03rem;
+          margin-left: 0.2rem;
+          margin-bottom: 1.6rem; }
         main .tickets-container-tickets-amount span {
           text-align: left; }
         main .tickets-container-tickets-amount input {
-          margin-top: 1.4rem;
-          margin-bottom: 3.5rem;
           width: 15rem;
           height: 5rem;
+          padding-left: 1.5rem;
           background-color: #000000;
           color: #fff;
           font-family: "Roboto", sans-serif;
           text-align: center;
           font-size: 2.2rem;
           line-height: 2.8rem;
-          border-radius: .1rem;
-          border: .1rem solid #fff; }
+          border-radius: 0.1rem;
+          border: 0.1rem solid #fff; }
+          main .tickets-container-tickets-amount input:first-of-type {
+            margin-top: 1.6rem;
+            margin-bottom: 3.9rem; }
         main .tickets-container-tickets-amount p {
-          margin-top: 1.5rem;
+          margin-top: 1.1rem;
+          margin-right: 0.2rem;
+          letter-spacing: 0.17rem;
           font-family: "Roboto", sans-serif;
           font-size: 2.8rem;
           line-height: 3.3rem;
@@ -418,24 +484,27 @@ main {
         main .tickets-container-tickets-amount .ticket-button {
           margin-left: -2.5rem;
           margin-top: 5rem;
+          padding-top: 0.2rem;
+          letter-spacing: 0.21rem;
           width: 17.5rem;
           height: 5rem;
           font-family: "Roboto", sans-serif;
           font-size: 2.2rem;
           line-height: 2.6rem;
-          color: #000000; }
+          color: #000000;
+          transition: background-color 0.45s; }
           main .tickets-container-tickets-amount .ticket-button:hover {
-            background-color: #9D8665; }
+            background-color: #9d8665; }
   main .contacts {
-    width: 192rem;
-    height: 97rem;
+    width: 100vw;
+    height: 96.2rem;
     color: #ffffff;
     padding: 0 24rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
     main .contacts h2 {
-      margin-top: 5rem;
+      margin-top: 7.5rem;
       color: #9d8665; }
       main .contacts h2:after {
         content: '';
@@ -445,7 +514,7 @@ main {
         height: 1em;
         width: 100%;
         border-bottom: 0.3rem solid #710707;
-        margin-top: 2.5rem; }
+        margin-top: 3.7rem; }
     main .contacts-container {
       margin-top: 10rem;
       display: flex;
@@ -455,13 +524,17 @@ main {
         color: #000000;
         font-family: "Roboto", sans-serif; }
         main .contacts-container-info h4 {
+          margin-top: 1.2rem;
+          margin-bottom: 3.6rem;
           font-size: 2.8rem;
           line-height: 3.3rem;
-          margin-bottom: 3.6rem; }
+          letter-spacing: 0.035rem; }
         main .contacts-container-info p {
           margin-bottom: 2rem;
           font-size: 2.2rem;
           line-height: 2.6rem; }
+          main .contacts-container-info p:first-of-type {
+            margin-top: 3.8rem; }
           main .contacts-container-info p:last-of-type {
             margin-bottom: 0; }
       main .contacts-container img {

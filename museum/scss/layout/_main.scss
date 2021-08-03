@@ -1,5 +1,5 @@
 main {
-  width: 192rem;
+  width: 100vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -7,28 +7,27 @@ main {
   margin: 0 auto;
 
   section {
-    width: 192rem;
+    width: 100vw;
     background-color: #030303;
     &:nth-child(even) {
       background-color: #fff;
     }
   }
-  
+
   //------------------------------------------------------------------
   //												WELCOME SECTION
   //------------------------------------------------------------------
-  
+
   .welcome {
     height: 75rem;
     padding: 11.4rem 0 0 24rem;
     color: #ffffff;
     display: flex;
     justify-content: space-between;
-    background-image: url("../../museum/assets/img/background.jpg");
+    background-image: url('../../museum/assets/img/background.jpg');
     background-repeat: no-repeat;
-    background-size: 121rem 75rem;
-    background-position: right bottom;
-
+    background-size: 121.5rem 75rem;
+    background-position: left 70.5rem bottom 0rem;
 
     &-container {
       z-index: 10;
@@ -48,16 +47,16 @@ main {
         width: 36rem;
         height: 7.5rem;
         font-family: $plain-text-font-family-light;
-        font-size: 2.2rem;
+        font-size: 2.45rem;
         line-height: 2.6rem;
         background-color: #710707;
         color: #ffffff;
+        transition: background-color 0.45s;
         &:hover {
           background-color: #9d8665;
         }
       }
     }
-
     h1 {
       display: none;
     }
@@ -68,9 +67,9 @@ main {
   //------------------------------------------------------------------
 
   .visiting {
-    width: 192rem;
+    width: 100vw;
     padding: 0 24rem;
-    height: 126rem;
+    height: 126.5rem;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -89,18 +88,27 @@ main {
       height: 1em;
       width: 100%;
       border-bottom: 0.3rem solid #710707;
-      margin-top: 2.5rem;
+      margin-top: 3.9rem;
     }
 
     &-cards {
-      margin-top: 10.3rem;
       width: 144rem;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
 
-      a, a:hover, a:active, a:visited{
+      a,
+      a:hover,
+      a:active,
+      a:visited {
         text-decoration: none;
+      }
+
+      .card-row-1 {
+        margin-bottom: 7rem;
+      }
+      .card-row-2 {
+        margin-bottom: 8.2rem;
       }
 
       &-card {
@@ -108,12 +116,11 @@ main {
         height: 43rem;
         color: #000000;
         position: relative;
-        margin-bottom: 7.8rem;
 
-        &:hover, &:active {
-          h3::after{
-              width: 100%;
-              transition: width 1s;
+        &:hover,
+        &:active {
+          h3::after {
+            width: 100%;
           }
         }
 
@@ -125,6 +132,7 @@ main {
           text-transform: uppercase;
           letter-spacing: 0.5rem;
           &::after {
+            transition: width 1s;
             content: '';
             position: absolute;
             left: 0;
@@ -132,15 +140,17 @@ main {
             height: 1em;
             width: 30rem;
             border-bottom: 0.3rem solid #710707;
-            margin-top: 0.9rem;
+            margin-top: 1.3rem;
+          }
         }
-      }
 
         P {
           margin-top: 2.1rem;
-          font-family: $plain-text-font-family-light;
+          font-family: $plain-text-font-family;
+          font-weight: 200;
           font-size: 2.2rem;
           line-height: 2.6rem;
+          letter-spacing: -0.01rem;
 
           &:last-of-type {
             margin-top: 1rem;
@@ -157,12 +167,12 @@ main {
   //------------------------------------------------------------------
 
   .explore {
-    width: 192rem;
+    width: 100vw;
     padding: 0 24rem;
     height: 86.5rem;
     color: #ffffff;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     &-description {
       margin-top: 7.4rem;
@@ -176,16 +186,18 @@ main {
         height: 1em;
         width: 100%;
         border-bottom: 0.3rem solid #710707;
-        margin-top: 2.5rem;
+        margin-top: 3.9rem;
       }
 
       p {
-        width: 66rem;
-        margin-top: 10rem;
-        margin-bottom: 2.5rem;
+        width: 65.9rem;
         font-family: $plain-text-font-family;
         font-size: 2.2rem;
         line-height: 3.8rem;
+        margin-top: 2.6rem;
+        &:first-of-type {
+          margin-top: 10.5rem;
+        }
       }
     }
 
@@ -199,17 +211,16 @@ main {
   //------------------------------------------------------------------
 
   .video {
-    width: 192rem;
+    width: 100vw;
     padding: 0 24rem;
-    height: 100rem;
+    height: 101rem;
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     &-description {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
       align-content: center;
       margin-top: 4rem;
@@ -219,9 +230,11 @@ main {
         color: #9d8665;
       }
       p {
+        padding-top: 0.5rem;
+        padding-left: 11.5rem;
         align-content: center;
         align-self: center;
-        width: 72rem;
+        width: 83rem;
         height: 9rem;
         font-family: $plain-text-font-family;
         font-size: 2.2rem;
@@ -236,53 +249,79 @@ main {
         position: relative;
         margin-top: 9rem;
 
+        .player {
+          width: 144rem;
+          height: 62.9rem;
+        }
+
         button {
           position: absolute;
-          top: 25rem;
-          left: 68rem;
+          top: 25.5rem;
+          left: 68.6rem;
           border: none;
           background-color: transparent;
           img {
-            
             z-index: 10;
+            transition: 0.3s;
           }
           &:hover,
           img:hover {
             cursor: pointer;
-            color:#989898;
+            color: #989898;
           }
         }
 
         .in-video {
           &-2 {
             position: absolute;
-            top: 20rem;
+            top: 20.5rem;
             left: 61rem;
           }
         }
       }
       &-panel {
-        height: 8.5rem;
+        padding-top: 0.2rem;
+        width: 144rem;
+        height: 9rem;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         align-items: center;
         background-color: black;
-        
+
         input {
           border-radius: 0.2rem;
           &:first-of-type {
-            width: 82rem;
+            margin-left: 4rem;
+            width: 82.3rem;
           }
           &:last-of-type {
+            margin-left: 1.8rem;
             width: 15.5rem;
+          }
+        }
+        .player-panel-btn {
+          &-1 {
+            margin-left: 4.1rem;
+          }
+          &-2 {
+            margin-left: 4.1rem;
+          }
+          &-3 {
+            margin-left: 4.1rem;
+          }
+          &-4 {
+            margin-left: 4rem;
+          }
+          &-5 {
+            margin-left: 4.9rem;
           }
         }
         button {
           border: none;
           background-color: transparent;
         }
- 
-        button:hover{
+
+        button:hover {
           cursor: pointer;
         }
       }
@@ -294,7 +333,7 @@ main {
   //------------------------------------------------------------------
 
   .tickets {
-    width: 192rem;
+    width: 100vw;
     height: 89.3rem;
     color: #ffffff;
     padding: 0 24rem;
@@ -312,7 +351,7 @@ main {
         height: 1em;
         width: 100%;
         border-bottom: 0.3rem solid #710707;
-        margin-top: 2.5rem;
+        margin-top: 3.6rem;
       }
     }
 
@@ -322,14 +361,18 @@ main {
 
       h4 {
         font-family: $header-font-family;
-        font-size: 2.8rem;
+        font-size: 3rem;
         line-height: 3.3rem;
+        margin-top: 0.1rem;
+        margin-left: 0.2rem;
+        letter-spacing: 0.09rem;
+        text-transform: capitalize;
       }
 
       span {
         font-family: $plain-text-font-family;
         font-size: 2.2rem;
-        line-height: 2.6rem;
+        line-height: 2rem;
       }
 
       &-tickets-type {
@@ -340,10 +383,12 @@ main {
 
         span {
           width: calc(23rem + 1.7rem + 2.3rem);
-          margin-top: 5rem;
+          margin-top: 5.5rem;
         }
 
         input {
+          width: 1.7rem;
+          height: 1.7rem;
           margin-right: 2.3rem;
         }
       }
@@ -356,30 +401,38 @@ main {
         text-align: right;
 
         h4 {
-          margin-bottom: 1.1rem;
+          letter-spacing: 0.03rem;
+          margin-left: 0.2rem;
+          margin-bottom: 1.6rem;
         }
 
-        span{
+        span {
           text-align: left;
         }
 
         input {
-          margin-top: 1.4rem;
-          margin-bottom: 3.5rem;
           width: 15rem;
           height: 5rem;
+          padding-left: 1.5rem;
           background-color: #000000;
           color: #fff;
           font-family: $plain-text-font-family;
           text-align: center;
           font-size: 2.2rem;
           line-height: 2.8rem;
-          border-radius: .1rem;
-          border: .1rem solid #fff;
+          border-radius: 0.1rem;
+          border: 0.1rem solid #fff;
+
+          &:first-of-type {
+            margin-top: 1.6rem;
+            margin-bottom: 3.9rem;
+          }
         }
 
         p {
-          margin-top: 1.5rem;
+          margin-top: 1.1rem;
+          margin-right: 0.2rem;
+          letter-spacing: 0.17rem;
           font-family: $plain-text-font-family;
           font-size: 2.8rem;
           line-height: 3.3rem;
@@ -389,14 +442,17 @@ main {
         .ticket-button {
           margin-left: -2.5rem;
           margin-top: 5rem;
+          padding-top: 0.2rem;
+          letter-spacing: 0.21rem;
           width: 17.5rem;
           height: 5rem;
           font-family: $plain-text-font-family;
           font-size: 2.2rem;
           line-height: 2.6rem;
           color: #000000;
-          &:hover{
-            background-color:#9D8665;
+          transition: background-color 0.45s;
+          &:hover {
+            background-color: #9d8665;
           }
         }
       }
@@ -408,8 +464,8 @@ main {
   //------------------------------------------------------------------
 
   .contacts {
-    width: 192rem;
-    height: 97rem;
+    width: 100vw;
+    height: 96.2rem;
     color: #ffffff;
     padding: 0 24rem;
     display: flex;
@@ -417,7 +473,7 @@ main {
     justify-content: space-between;
 
     h2 {
-      margin-top: 5rem;
+      margin-top: 7.5rem;
       color: #9d8665;
 
       &:after {
@@ -428,7 +484,7 @@ main {
         height: 1em;
         width: 100%;
         border-bottom: 0.3rem solid #710707;
-        margin-top: 2.5rem;
+        margin-top: 3.7rem;
       }
     }
 
@@ -442,22 +498,27 @@ main {
         color: #000000;
         font-family: $plain-text-font-family;
         h4 {
+          margin-top: 1.2rem;
+          margin-bottom: 3.6rem;
           font-size: 2.8rem;
           line-height: 3.3rem;
-          margin-bottom: 3.6rem;
+          letter-spacing: 0.035rem;
         }
         p {
           margin-bottom: 2rem;
           font-size: 2.2rem;
           line-height: 2.6rem;
+          &:first-of-type {
+            margin-top: 3.8rem;
+          }
           &:last-of-type {
             margin-bottom: 0;
           }
         }
       }
-			img{
-				margin-bottom: 8rem;
-			}
+      img {
+        margin-bottom: 8rem;
+      }
     }
   }
 }
