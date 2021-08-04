@@ -87,6 +87,8 @@
       }
     }
     &-social {
+      display: flex;
+      justify-content: flex-start;
       margin-top: 8.8rem;
       width: 34rem;
       height: 5rem;
