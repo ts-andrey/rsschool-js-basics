@@ -81,6 +81,8 @@ h1, h2 {
           .footer-container-nav li a:hover, .footer-container-nav li a:active {
             color: #9d8665; }
     .footer-container-social {
+      display: flex;
+      justify-content: flex-start;
       margin-top: 8.8rem;
       width: 34rem;
       height: 5rem; }
