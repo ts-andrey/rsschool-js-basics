@@ -3,7 +3,6 @@ import {
   changeThemeHandler,
   keyClickHandler,
   playSoundHandler,
-  buttonClickHandler,
 } from './handlers.js';
 
 const mode = document.querySelector('.mode');
