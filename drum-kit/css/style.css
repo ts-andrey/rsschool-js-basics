@@ -1,0 +1,157 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 10px; }
+
+body {
+  box-sizing: border-box; }
+
+header {
+  width: 100vw;
+  height: 9rem;
+  background-color: rgba(0, 0, 0, 0.87);
+  color: #bbb;
+  letter-spacing: 0.1rem;
+  display: flex;
+  justify-content: center; }
+  header .wrapper {
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  header h3 {
+    font-size: 2.5rem;
+    margin: 1rem 0 0.5rem 0; }
+  header ul {
+    display: flex;
+    list-style: none;
+    font-size: 1.8rem;
+    justify-content: space-between; }
+    header ul .active {
+      border: 0.5rem rgba(42, 85, 226, 0.6) solid;
+      background: rgba(255, 255, 255, 0.25);
+      color: #fff; }
+    header ul li {
+      padding: 0.8rem;
+      border: 0.5rem transparent solid; }
+      header ul li:hover {
+        border: 0.5rem rgba(42, 85, 226, 0.6) solid;
+        background: rgba(255, 255, 255, 0.25);
+        color: #fff;
+        cursor: pointer; }
+  header .mode {
+    width: 27rem; }
+  header .theme {
+    width: 14rem; }
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../assets/img/bg-dark.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+main {
+  width: 100vw;
+  height: calc(100vh - 9rem);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  main .plain {
+    display: flex;
+    justify-content: center;
+    width: 100vw; }
+    main .plain .container {
+      display: flex;
+      justify-content: center; }
+  main .autoplay {
+    flex-basis: 25%; }
+    main .autoplay h3 {
+      text-align: center;
+      color: #fff;
+      font-size: 3rem;
+      background-color: rgba(0, 0, 0, 0.7); }
+    main .autoplay form {
+      font-size: 1.4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center; }
+      main .autoplay form input {
+        text-align: center;
+        height: 2.5rem; }
+        main .autoplay form input.key-name {
+          width: 3rem;
+          border: 0.3rem solid transparent; }
+        main .autoplay form input.autoplay {
+          border-color: rgba(0, 255, 242, 0.7); }
+        main .autoplay form input.speed {
+          width: 6.5rem; }
+      main .autoplay form button {
+        height: 3rem;
+        padding: 0.5rem 1rem; }
+        main .autoplay form button.element {
+          background: radial-gradient(center); }
+  main .expanded {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-basis: 100%; }
+  main .replete {
+    margin: 0 auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    main .replete .wrapper {
+      flex-basis: 60%;
+      display: flex;
+      flex-direction: column; }
+  main .row {
+    display: flex;
+    align-items: stretch;
+    list-style: none; }
+    main .row .key {
+      width: 6rem;
+      text-align: center;
+      font-size: 4rem;
+      color: #fff;
+      border: 0.3rem rgba(131, 131, 131, 0.85) solid;
+      border-radius: 0.1rem;
+      background: rgba(0, 0, 0, 0.7);
+      margin: 0.75rem;
+      transition: all 0.05s;
+      display: flex;
+      flex-direction: column; }
+      main .row .key:hover {
+        cursor: pointer; }
+      main .row .key p {
+        text-align: center; }
+      main .row .key span {
+        text-align: center;
+        border-top: rgba(131, 131, 131, 0.85) 0.3rem solid;
+        font-size: 1.1rem;
+        color: #00eeff;
+        line-height: 100%; }
+    main .row .playing {
+      transform: scale3d(1.2, 1.2, 1.05);
+      border-color: #003cff;
+      box-shadow: 0 0 1rem #aaa; }
+    main .row .click-playing {
+      transform: scale3d(1.25, 1.25, 1.15);
+      border-color: #00fff2;
+      box-shadow: 0 0 1rem #aaa; }
+  main .row-1 {
+    margin-left: 0rem; }
+  main .row-2 {
+    margin-left: 1.5rem; }
+  main .row-3 {
+    margin-left: 3rem; }

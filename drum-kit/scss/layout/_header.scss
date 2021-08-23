@@ -1,0 +1,57 @@
+@mixin active-option {
+  border: 0.5rem rgba(42, 85, 226, 0.6) solid;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+header {
+  width: 100vw;
+	height: 9rem;
+  background-color: rgba(0, 0, 0, 0.87);
+  color: #bbb;
+  letter-spacing: 0.1rem;
+  display: flex;
+  justify-content: center;
+
+  .wrapper {
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    font-size: 1.8rem;
+    justify-content: space-between;
+
+    .active {
+      @include active-option;
+    }
+
+    li {
+      padding: 0.8rem;
+      border: 0.5rem transparent solid;
+
+      &:hover {
+        @include active-option;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .mode {
+    width: 27rem;
+  }
+
+  .theme {
+    width: 14rem;
+  }
+}
