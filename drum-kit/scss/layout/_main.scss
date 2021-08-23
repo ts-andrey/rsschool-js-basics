@@ -1,0 +1,145 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../assets/img/bg-dark.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  width: 100vw;
+  height: calc(100vh - 9rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .plain {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .autoplay {
+    flex-basis: 25%;
+    h3 {
+      text-align: center;
+      color: #fff;
+      font-size: 3rem;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    form {
+      font-size: 1.4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      input {
+        text-align: center;
+        height: 2.5rem;
+
+        &.key-name {
+          width: 3rem;
+          border: 0.3rem solid transparent;
+        }
+        &.autoplay{
+          border-color: rgba(0, 255, 242, 0.7);
+        }
+        &.speed {
+          width: 6.5rem;
+        }
+      }
+
+      button {
+        height: 3rem;
+        padding: 0.5rem 1rem;
+
+        &.element {
+          background: radial-gradient(center);
+        }
+      }
+    }
+  }
+
+  .expanded {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-basis: 100%;
+  }
+
+  .replete {
+    margin: 0 auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .wrapper {
+      flex-basis: 60%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .row {
+    display: flex;
+    align-items: stretch;
+    list-style: none;
+
+    .key {
+      width: 6rem;
+      text-align: center;
+      font-size: 4rem;
+      color: #fff;
+      border: 0.3rem rgba(131, 131, 131, 0.85) solid;
+      border-radius: 0.1rem;
+      background: rgba(0, 0, 0, 0.7);
+      margin: 0.75rem;
+      transition: all 0.05s;
+      display: flex;
+      flex-direction: column;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      span {
+        text-align: center;
+        border-top: rgba(131, 131, 131, 0.85) 0.3rem solid;
+        font-size: 1.1rem;
+        color: rgb(0, 238, 255);
+        line-height: 100%;
+      }
+    }
+    .playing {
+      transform: scale3d(1.2, 1.2, 1.05);
+      border-color: rgba(0, 60, 255, 1);
+      box-shadow: 0 0 1rem #aaa;
+    }
+    .click-playing {
+      transform: scale3d(1.25, 1.25, 1.15);
+      border-color: rgba(0, 255, 242, 1);
+      box-shadow: 0 0 1rem #aaa;
+    }
+  }
+
+  .row-1 {
+    margin-left: 0rem;
+  }
+  .row-2 {
+    margin-left: 1.5rem;
+  }
+  .row-3 {
+    margin-left: 3rem;
+  }
+}
