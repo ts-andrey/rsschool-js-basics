@@ -88,7 +88,9 @@ main {
         display: flex;
         margin-right: 1rem; }
         main .player .player__controls .right svg {
-          width: 5rem; }
+          margin: 0 1rem; }
+        main .player .player__controls .right .play_speed {
+          margin-right: 2rem; }
     main .player .progress {
       flex: 10;
       position: relative;

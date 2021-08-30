@@ -111,8 +111,13 @@ main {
       .right{
         display: flex;
         margin-right: 1rem;
+
         svg {
-          width: 5rem;
+          margin: 0 1rem;
+        }
+
+        .play_speed{
+          margin-right: 2rem;
         }
       }
     }
