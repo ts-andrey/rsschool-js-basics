@@ -46,6 +46,8 @@ main {
         height: 1rem; }
     main .player .player__video {
       width: 100%; }
+    main .player .volume {
+      margin-left: 2rem; }
     main .player .player__button {
       text-align: center;
       background: none;
@@ -58,11 +60,9 @@ main {
       cursor: pointer; }
       main .player .player__button:focus {
         border-color: #ffc600; }
-      main .player .player__button svg {
-        width: 4rem; }
     main .player svg {
       fill: #3167fd;
-      height: 3rem; }
+      height: 3.5rem; }
       main .player svg:hover {
         fill: #0044ff; }
     main .player .player__controls {
@@ -82,9 +82,13 @@ main {
       main .player .player__controls .left {
         margin-left: 1rem;
         display: flex; }
+        main .player .player__controls .left svg {
+          margin: 0 1rem; }
       main .player .player__controls .right {
         display: flex;
         margin-right: 1rem; }
+        main .player .player__controls .right svg {
+          width: 5rem; }
     main .player .progress {
       flex: 10;
       position: relative;

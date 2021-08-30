@@ -50,6 +50,10 @@ main {
       width: 100%;
     }
 
+    .volume {
+      margin-left: 2rem;
+    }
+
     .player__button {
       text-align: center;
       background: none;
@@ -65,15 +69,13 @@ main {
         border-color: #ffc600;
       }
 
-      svg {
-        width: 4rem;
-      }
+ 
     }
-    
+
 
     svg {
       fill: #3167fd;
-      height: 3rem;
+      height: 3.5rem;
       &:hover {
         fill: #0044ff;
       }
@@ -102,10 +104,16 @@ main {
       .left{
         margin-left: 1rem;
         display: flex;
+        svg {
+          margin: 0 1rem;
+        }
       }
       .right{
         display: flex;
         margin-right: 1rem;
+        svg {
+          width: 5rem;
+        }
       }
     }
 
