@@ -392,3 +392,30 @@ videoList.forEach(video => {
   video.addEventListener('mouseleave', togglePlay);
   video.addEventListener('click', buildNPlay);
 });
+
+const featureObject = {
+  f: 'fullscreen mode',
+  space: 'toggle play/pause mode',
+  k: 'toggle play/pause mode',
+  m: 'toggle mute mode',
+  ',': 'make play speed slower',
+  '.': 'make play speed faster',
+  j: 'return back on 5 seconds',
+  l: 'move forward on 5 seconds',
+  t: 'toggle theatre mode',
+  1: 'go to 10% video duration time',
+  2: 'go to 20% video duration time',
+  3: 'go to 30% video duration time',
+  4: 'go to 40% video duration time',
+  5: 'go to 50% video duration time',
+  6: 'go to 60% video duration time',
+  7: 'go to 70% video duration time',
+  8: 'go to 80% video duration time',
+  9: 'go to 90% video duration time',
+  'mini-cinema-store': 'add mini-cinema store feature',
+  'render-clicked-video': 'add rendering of clicked video at center with all required features',
+};
+console.log(
+  `Hello there! I prepared for you the table with features that I implemented in my custom-video-player to make your job a bit easier. And to make sure you didn't miss anything, btw thank you for your review.`
+);
+console.table(featureObject);
