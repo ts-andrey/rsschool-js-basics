@@ -1,2 +1,1 @@
-# ts-andrey-JSFEPRESCHOOL
-Private repository for @ts-andrey
+# Rolling Scopes School JavaScript/Front-end (basics) course repository
